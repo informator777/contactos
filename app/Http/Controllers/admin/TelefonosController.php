@@ -19,7 +19,7 @@ class TelefonosController extends Controller
 
     public function  __construct()
     {
-        $this->middleware('auth')->only('index', 'show', 'edit','delete'); 
+        $this->middleware('auth')->only('index', 'show', 'edit','destroy'); 
     }
 
 
@@ -99,9 +99,10 @@ class TelefonosController extends Controller
      * @return \Illuminate\View\View
      */
     public function edit($id)
+    
     {
         $telefono = Telefono::findOrFail($id);
-
+        //dd($telefono);
         return view('admin.telefonos.edit', compact('telefono'));
     }
 
@@ -115,7 +116,7 @@ class TelefonosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+        //dd($request);
         $requestData = $request->all();
         
         $telefono = Telefono::findOrFail($id);

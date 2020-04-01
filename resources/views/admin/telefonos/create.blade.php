@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-header">Registro Telefónico</div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/telefonos') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Cancelar</button></a>
+                        <a href="{{ url('/') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Cancelar</button></a>
                         <br />
                         <br />
 
